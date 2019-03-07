@@ -1,1 +1,1 @@
-## Identifique la issue la fecha, ideas para resolverlo
+## Indique la issue la fecha, ideas para resolverlo
