@@ -1,0 +1,40 @@
+  .Name{
+    padding: 25px;
+    margin-left: 250px;
+    color: #f3e9d2;
+  }
+  .Titulo{
+    padding: 25px;
+    margin-left: 50px;
+  }
+  .sep{
+    padding: 50px;
+  }
+  .header{
+    background-color: #1b211c;
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #f3e9d2;
+  }
+  #imagen-resumen{
+    width: 100%;
+    padding: 15px;
+  }
+  .img_header{
+    width: 159px;
+    height: 205px;
+    border-radius: 90px;
+  }
+  .fab{
+    font-size: 50px;
+  }
+  .fas{
+    font-size: 50px;
+  }
+  .body-row{
+    background-color: #1b211c;
+    color: #f3e9d2;
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #f3e9d2;
+  }
