@@ -5,18 +5,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/propios.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Francisco Maneiro</title>
   </head>
   <body>
-  
+
   <div class="container">
     <div class="row align-items-center header">
-      <div class="col-sm-10">
-        <h1 class="Name">Francisco Jose Maneiro Maita</h1>
+      <div class="col-sm-10 header-flex">
+        <h1 class="Name">Francisco's</h1>
+        <h3 class="port">Portafolio</h3>
       </div>
-
-
       <div class="col-sm-2">
         <img class="img_header" src="img/Perfil.jpg" alt="Yo">
       </div>
@@ -25,9 +24,10 @@
 
 
   <div class="sep"></div>
+
   <div class="container">
     <div class="row body-row align-items-center">
-      <div class="col-sm-12 offset-md-3">
+      <div class="col-sm-12">
         <h1 class="Titulo">Resúmen Profesional</h1>
 
       </div>
@@ -36,29 +36,29 @@
         <p>Trabajo con codeigniter desde el back-end hasta el front-end, manejo sus rutas, sus libraries, he realizado varias entregas exitosas de sistemas hechos con CI, siendo escogido luego de determinar la meta de la empresa lo ideal es conseguir un sistema eficaz en el tiempo previsto. Mis trabajos son remotos, no tengo posibilidad de tener un empleo presencial, Tengo un manejo de ingles intermedio, Hablando y Escrbiendo.</p>
       </div>
 
-      <div class="col-sm-6">
-        <img src="img/Banner.png" id="imagen-resumen" alt="">
+      <div class="col-sm-6 img-modal">
+        <img src="img/Banner.png" class="imagen-resumen" onclick="showModal('Cohem')" id="imagencohem" alt="">
       </div>
       <div class="col-sm-6">
         <p> <h5 class="tit">Cohem Game Store</h5> Sitio web desarrollado para tienda especializada en articulos geek</p>
       </div>
 
 
-      <div class="col-sm-6">
-        <img src="img/Lastnews.png" id="imagen-resumen" alt="">
+      <div class="col-sm-6 img-modal">
+        <img src="img/Lastnews.png" class="imagen-resumen" id="imagen-resumen" alt="">
       </div>
       <div class="col-sm-6">
         <p><h5>Radreserva</h5> Sistema de informacion web, realizado para el manejo de reservas en el parque aquatico Aquapark</p>
       </div>
 
-      <div class="col-sm-6">
-        <img src="img/Login.png" id="imagen-resumen" style="margin-bottom: 15px;" alt="">
+      <div class="col-sm-6 img-modal">
+        <img src="img/Login.png" class="imagen-resumen" id="imagen-resumen" style="margin-bottom: 15px;" alt="">
       </div>
       <div class="col-sm-6">
         <p><h5>SerconGes</h5> Sistema de informacion web, Realizado para empresa de mantenimiento de tanquillas electricas, Serconlenca</p>
       </div>
 
-      <div class="col-sm-12 offset-sm-3">
+      <!-- <div class="col-sm-12">
         <h1 class="Titulo">Extras de trabajo</h1>
       </div>
 
@@ -70,10 +70,10 @@
       <div class="col-sm-6">
         <p>Trello</p>
         <img src="img/trello-logo.png">
-      </div>
+      </div> -->
 
 
-      <div class="sep"></div>
+      <!-- <div class="sep"></div> -->
     </div>
 
 
@@ -87,7 +87,7 @@
   <footer>
   <div class="container">
     <div class="row body-row">
-      <div class="col-sm-12 offset-sm-3">
+      <div class="col-sm-12">
         <h1 class="Titulo">Contactos directos</h1>
       </div>
       <div class="col-sm-4">
@@ -106,10 +106,35 @@
   </footer>
   </body>
 
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.js"
+
+  <div class="modal" id="Modal" style="display:none">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Imagenes extras</h4>
+          <button type="button" class="close" onclick="closeModal()" data-dismiss="modal"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-content">
+              <div class="col-sm-12 main_galeria">
+                <img src="" id="main_img">
+              </div>
+              <div class="col-sm-4 offset-sm-4 opc_galeria">
+                <img src="" id="img_1">
+                <img src="" id="img_2">
+                <img src="" id="img_3">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <script
+    src="js/jquery-3.3.1.slim.js"
     integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 <script src="js/bootstrap.min.js" charset="utf-8"></script>
 <script src="js/propios.js" charset="utf-8"></script>
 </html>

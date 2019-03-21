@@ -1,22 +1,38 @@
-  .Name{
-    padding: 25px;
-    margin-left: 250px;
-    color: #f3e9d2;
+  body{
+    display: flex;
+    flex-direction: column;
+    background: #191919;
   }
-  .Titulo{
+  .header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .Name{
+    color: #c5c5cf;
+  }
+  .port{
+    color: #1b1b1b;
+  }
+  /* .Titulo{
     padding: 25px;
     margin-left: 50px;
-  }
+  } */
   .sep{
     padding: 50px;
   }
+
   .header{
-    background-color: #1b211c;
-    border-style: solid;
-    border-radius: 35px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2f4550;
+    border-style: none;
+    border-radius: 12px;
     border-color: #f3e9d2;
   }
-  #imagen-resumen{
+  .imagen-resumen{
     width: 100%;
     padding: 15px;
   }
@@ -32,9 +48,71 @@
     font-size: 50px;
   }
   .body-row{
-    background-color: #1b211c;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 1em;
+    border-style: none;
+    border-radius: 12px;
+    background-color: #2f4550;
     color: #f3e9d2;
-    border-style: solid;
-    border-radius: 35px;
-    border-color: #f3e9d2;
+  }
+  .modal-header{
+    color: #f3e9d2;
+    border-style: none;
+    background-color: #212622de;
+    height: 60px
+  }
+  .modal-content{
+    background-color: #212622de;
+    border-style: none;
+
+  }
+  .modal-body{
+    background-color: #212622de;
+  }
+  .close{
+    color: #f3e9d2;
+  }
+  div#Modal{
+    background-color: #212622de;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+  }
+  #main_img{
+    margin-left: 30px;
+    width: 940px;
+    height: 300px;
+  }
+  #opc_galeria{
+    display: table;
+    margin: 0 auto;
+  }
+  img#img_1{
+    width:  60px;
+    height:  60px;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 5px;
+  }
+  img#img_2{
+    width:  60px;
+    height:  60px;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 5px;
+  }
+  img#img_3{
+    width:  60px;
+    height:  60px;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px 5px;
   }
