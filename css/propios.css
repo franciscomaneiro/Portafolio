@@ -6,9 +6,8 @@
   .header-flex{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     flex-direction: column;
-
   }
   .Name{
     color: #c5c5cf;
@@ -53,7 +52,7 @@
     align-content: center;
     padding: 1em;
     border-style: none;
-    border-radius: 12px;
+    border-radius:12px;
     background-color: #2f4550;
     color: #f3e9d2;
   }

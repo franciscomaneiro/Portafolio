@@ -1,7 +1,12 @@
 const IMG_COHEM = {
-  url1: 'img/Banner.png',
-  url2: 'img/Lastnews.png',
-  url3: 'img/Login.png'
+  'url1': 'img/Banner.png',
+  'url2': 'img/Lastnews.png',
+  'url3': 'img/Login.png'
+}
+const IMG_RADRSERVA = {
+  'url1': 'img/loginradreserva.png',
+  'url2': 'img/imagenrecortada.png',
+  'url3': 'img/imagen2.png'
 }
 
 var globalProyecto;
@@ -23,6 +28,9 @@ function showModal(proyecto) {
         fotosModal(IMG_COHEM);
         globalProyecto = IMG_COHEM
       break;
+    case 'Radreserva':
+        fotosModal(IMG_RADRSERVA);
+        globalProyecto = IMG_RADRSERVA
     default:
 
   }
@@ -30,22 +38,21 @@ function showModal(proyecto) {
 }
 
 function changeImg(changeurl) {
-  let defineurl;
+  let defineurl
 
   switch (changeurl) {
     case 'url1':
-    defineurl = url1;
+    defineurl = globalProyecto.url1;
     break;
     case 'url2':
-    defineurl = url2;
+    defineurl = globalProyecto.url2;
     break;
     case 'url2':
-    defineurl = url3;
+    defineurl = globalProyecto.url3;
     break;
-  }
-  console.log(globalProyecto, changeurl)
+    }
 
-  document.getElementById('main_img').src = globalProyecto.defineurl;
+  document.getElementById('main_img').src = defineurl;
 }
 
 
