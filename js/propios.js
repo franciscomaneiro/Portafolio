@@ -47,7 +47,7 @@ function changeImg(changeurl) {
     case 'url2':
     defineurl = globalProyecto.url2;
     break;
-    case 'url2':
+    case 'url3':
     defineurl = globalProyecto.url3;
     break;
     }
