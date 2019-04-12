@@ -8,6 +8,8 @@ const IMG_RADRSERVA = {
   'url2': 'img/imagenrecortada.png',
   'url3': 'img/imagen2.png'
 }
+const GIT = 'img/gitgithub_diploma.png';
+const JS = 'img/jsdiploma.png'
 
 var globalProyecto;
 
@@ -22,19 +24,36 @@ function fotosModal(obj) {
 
 
 
+function modalDiploma(diploma){
+  document.getElementById('modalname').innerText = 'Diploma'
+  document.getElementById('Modal').style.display = 'block'
+  
+}
+
 function showModal(proyecto) {
   switch (proyecto) {
     case 'Cohem':
-        fotosModal(IMG_COHEM);
+    fotosModal(IMG_COHEM);
         globalProyecto = IMG_COHEM
+        document.getElementById('Modal').style.display = 'block'
       break;
     case 'Radreserva':
         fotosModal(IMG_RADRSERVA);
         globalProyecto = IMG_RADRSERVA
-    default:
-
+        document.getElementById('Modal').style.display = 'block'
+      break;
+    case 'js':
+        modalDiploma(JS);
+        // document.getElementById('Modal-diploma').style.display = 'block'
+        // document.getElementById('img-diploma').src = JS
+        // console.log('JS')
+      break;
+    case 'git':
+        modalDiploma(GIT);
+        // document.getElementById('Modal-diploma').style.display = 'block'
+      break;
   }
-  document.getElementById('Modal').style.display = 'block'
+  
 }
 
 function changeImg(changeurl) {
@@ -55,7 +74,7 @@ function changeImg(changeurl) {
   document.getElementById('main_img').src = defineurl;
 }
 
-
 function closeModal() {
-  document.getElementById('Modal').style.display = 'none'
+  document.getElementById('Modal').style.display = 'none';
+  document.getElementById('modalsito2').style.display = 'none';
 }

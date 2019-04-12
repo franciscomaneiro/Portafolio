@@ -50,6 +50,13 @@ body{
 .titulo h1{
     display: flex;
     justify-content: center;
+    margin: 0.5em
+}
+.dip-col img{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 200px;
 }
 /*extras de trabajo*/
 .ext-col{
@@ -58,6 +65,7 @@ body{
 
 }
 .ext-col img{
+  margin: 0.5em;
   width: 10em;
   height: 10em;
 }
@@ -95,6 +103,12 @@ footer i{
     color: #f3e9d2;
   }
   div#Modal{
+    background-color: #212622de;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+  }
+  div#modalsito2{
     background-color: #212622de;
     border-style: none;
     width: 100%;
